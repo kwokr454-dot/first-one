@@ -1,0 +1,22 @@
+import random
+double_price = 2
+
+
+fruits=["🍎","🍌","🍇","🍉","🍑"] 
+
+
+fruit1=random.randint(0,4)
+fruit2=random.randint(0,4)
+fruit3=random.randint(0,4)
+fruit4=random.randint(0,4)
+
+
+money = str(input("how much do you bet"))
+
+
+print(fruits[fruit1],fruits[fruit2],fruits[fruit3],fruits[fruit4])
+if (fruit1==fruit2) and (fruit2==fruit3) and (fruit3==fruit4):
+print("you win, well done")
+print("you won"+str(money*double_price))
+else:
+print("you lose haha")
