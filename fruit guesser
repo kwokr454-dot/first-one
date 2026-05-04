@@ -32,7 +32,7 @@ for i in range(time):
         print("you lose haha")
         
 print("you tried all you attempt")
-print("you spent ", total)
-print("you won ", total2)
-print("overall: ", total2 - total)
+print("you spent ", total), "!"
+print("you won ", total2, "!")
+print("overall balance: ", total2 - total, "!")
 
