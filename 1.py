@@ -9,22 +9,27 @@ def challenge():
         numberg=int(input("type in your guess"))
         if numberg < number:
             print("you win and the number was", number)
+            return
         else:
             print("you lose")
+            return
     elif selected=="same":
         print("you have to guess a number that is the same as the selected number")
         numberg=int(input("type in your guess"))
         if numberg==number:
             print("you got it right")
+            return
         else:
             print("you got it wrong, it was ", number)
-            
+            return
     else:
         print("you have to guess a number that is higher than the selected number")
         numberg=int(input("type in your guess"))
         if numberg>number:
             print("you got it right")
+            return
         else:
             print("you got it wrong, it was ", number)
+            return
 
 challenge()
