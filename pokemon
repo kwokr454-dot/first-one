@@ -1,0 +1,3 @@
+def enterscreen():
+  print("Welcome to the pokemon world where u can catch, explore and make new friends as well as fighting gym")
+  
