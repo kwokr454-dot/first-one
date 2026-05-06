@@ -1,3 +1,15 @@
+import random
+n=0
 def enterscreen():
   print("Welcome to the pokemon world where u can catch, explore and make new friends as well as fighting gym")
-  
+  while n!=1:
+    name=str(input("name, it can be any character but has to be less than 10 char")
+    lengt=name.length
+    if lengt>10:
+      print("its too long")
+    else:
+      n=n+1
+  print("your name is ", name)
+  print("your pokemon journey begins rn")
+
+
