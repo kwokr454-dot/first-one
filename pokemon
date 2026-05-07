@@ -1,5 +1,6 @@
 import random
 n=0
+leave_house=0
 def enterscreen():
   print("Welcome to the pokemon world where u can catch, explore and make new friends as well as fighting gym")
   while n!=1:
@@ -11,5 +12,20 @@ def enterscreen():
       n=n+1
   print("your name is ", name)
   print("your pokemon journey begins rn")
+def ch1():
+  print("you woke up and realise you are running late to prof. oak to collect your first pokemon", name)
+  direction=input("do you wanna leave you house")
+  while leave_house!=1:
+    print("you need to tell your mum before you go")
+    pp=input("mum: ohh are you ready to go?, i didnt this day will come so quickly. press y or n")
+    if pp == "y":
+      leave_house+=1
+    else:
+      pass
+  print(direction)
+  if direction=="y":
+    print("you are now changing and ready to walk through the door")
+  else:
+    print("you are already running late, theres no time to waste(your character decided to go anyway without following your input)")
 
 
