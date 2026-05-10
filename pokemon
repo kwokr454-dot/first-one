@@ -56,7 +56,33 @@ def wild_prof():
       pikachu?=random.randint(pokemonwild_prof)
       print("you encountered  a dangerous pokemon, you really are the chosen one, the pokemon looks like a...", pikachu?, "!!!")
       print("you are scared, but prof. Oak got here and he teaches you how to catch your first pokemon")
-      add_item("pokeball") ### add pokemon def
+      add_item("pokeball")
+
+
+
+def pokemonball():
+  pokeball_stat=0.6
+  if pokemonstat<pokeball_stat:
+    print("ning")
+    print("ning")
+    print("ning")
+    print("caught successfully")
+    backpack.remove("pokeball")
+  else:
+    backpack.remove("pokeball")
+    if "pokeball" in backpack:
+      again=input("do you wanna try again or run away, y or n")
+      if again=="y":
+        if pokemonstat<pokeball_stat:
+          print("ning")
+          print("ning")
+          print("ning")
+          print("caught successfully")
+           backpack.remove("pokeball")
+        else:
+          print("the pokemon escaped")
+      else:
+          print("you got away successfully")
 
       
     
