@@ -5,6 +5,7 @@ pokemonwild_prof=["pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","p
 yes_no=["yes","no"]
 tall_grass=false
 backpack=[]
+party=[]
 
 
 
@@ -57,6 +58,7 @@ def wild_prof():
       print("you encountered  a dangerous pokemon, you really are the chosen one, the pokemon looks like a...", pikachu?, "!!!")
       print("you are scared, but prof. Oak got here and he teaches you how to catch your first pokemon")
       add_item("pokeball")
+  pokemonball()
 
 
 
@@ -68,6 +70,7 @@ def pokemonball():
     print("ning")
     print("caught successfully")
     backpack.remove("pokeball")
+    party.append("pikachu")
   else:
     backpack.remove("pokeball")
     if "pokeball" in backpack:
@@ -78,6 +81,8 @@ def pokemonball():
           print("ning")
           print("ning")
           print("caught successfully")
+          party.append("pikachu")
+          
            backpack.remove("pokeball")
         else:
           print("the pokemon escaped")
