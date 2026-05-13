@@ -1,0 +1,17 @@
+def exchange():
+  pound=213.41
+  yen=0.0047
+  type=input("do you wanna do 1.pound to yen or 2.yen to pound, press 1 or 2")
+  if type == 1:
+    money=input("how much money do you wanna exchange to yen")
+    print(money*pound, "is how much you will get")
+  elif type == 2:
+    money=input("how much money do you wanna exchange to pound")
+    print(money*yen, "is how much you will get")
+  else:
+    print("invalid input")
+
+exchange()
+
+  
+  
