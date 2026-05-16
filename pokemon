@@ -1,7 +1,7 @@
 import random
 n=0
 leave_house=0
-pokemonwild_prof=["pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","shiny pikachu",]
+pokemonwild_prof=["pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","pikachu","shiny pikachu"]
 yes_no=["yes","no"]
 tall_grass=false
 backpack=[]
