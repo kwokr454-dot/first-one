@@ -58,11 +58,12 @@ def wild_prof():
       print("you encountered  a dangerous pokemon, you really are the chosen one, the pokemon looks like a...", pikachu?, "!!!")
       print("you are scared, but prof. Oak got here and he teaches you how to catch your first pokemon")
       add_item("pokeball")
-  pokemonball()
+  pokemonballpikachu()
 
 
 
-def pokemonball():
+def pokemonballpikachu():
+  print("a pokeball")
   pokeball_stat=0.6
   if pokemonstat<pokeball_stat:
     print("ning")
@@ -88,6 +89,15 @@ def pokemonball():
           print("the pokemon escaped")
       else:
           print("you got away successfully")
+
+professor_lab():
+  print("you are now in professors lab")
+  print("prof.oak:welcome to my lab, here we do all sorts of experiment and you will get to pick out ur starter if not already")
+  print("if you have pikachu it will be ur starter and you will also get a pokedex, but its still under development")
+  if "pikachu" in party:
+    print("you cant get a starter, but ur journey starts now")
+  else:
+    print("pls pick out a starter")
 
       
     
