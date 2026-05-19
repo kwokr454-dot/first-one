@@ -1,1 +1,16 @@
+binary=input("Enter a binary value")
+#binary="binaryconversion"
+binary = list(binary)
+print(binary)
+number = 0
 
+#list=["start","eng","inc"]
+#binary[start:eng:incrementvalue]
+value=(binary[::-1])
+#print("value")
+power=len(binary)-1
+power2=2**power
+print(power2)
+length=len(binary)
+print(value)
+for i
