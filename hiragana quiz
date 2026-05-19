@@ -1,1 +1,4 @@
+while True:
+  import random
+  vowels=["あ","い","う","え","お"]
 
