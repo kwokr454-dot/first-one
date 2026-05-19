@@ -5,7 +5,7 @@ stored=[]
 won=[]
 for i in range(time):
 
-    
+    ### sometimes doesnt work... check
     fruits=["🍎","🍌","🍇","🍉","🍑"]
 
 
@@ -13,7 +13,6 @@ for i in range(time):
     fruit2=random.randint(0,4)
     fruit3=random.randint(0,4)
     fruit4=random.randint(0,4)
-
 
     money = int(input("how much do you bet"))
     stored.append(money)
