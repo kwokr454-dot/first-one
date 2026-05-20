@@ -14,6 +14,9 @@ while True:
   ["ば","び","ぶ","べ","ぼ"],
   ["ぱ","ぴ","ぷ","ぺ","ぽ"]]
 
+  quiz=input("do you wanna do a blind test or target specific column, bt or sc")
+  if quiz == "sc":
+
 
   
 
