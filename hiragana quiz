@@ -16,7 +16,9 @@ while True:
 
   quiz=input("do you wanna do a blind test or target specific column, bt or sc")
   if quiz == "sc":
-
+    column=int(input("which colume do you wanna do, vowels(0),k(1),s(2),t(3),n(4),h(5),m(6),y(7),g(from k(8)),z(from s(9)),d(from t(10)),b(from h(11)),p(from h(12))
+    print("so its this one yh", vowels[column])
+    
 
   
 
