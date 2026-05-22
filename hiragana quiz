@@ -70,7 +70,9 @@ g(from k(8)),z(from s(9)),d(from t(10)),b(from h(11)),p(from h(12))
 
 
 ### for sc= the column number isnt working, check from(0,12), 12 should be last but some reason out of range
-    
+### add dictionary to list symbol: sound
+### check gemini
+###learn open()
 
   
 
