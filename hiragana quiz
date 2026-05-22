@@ -16,19 +16,60 @@ while True:
 
     quiz=input("do you wanna do a blind test or target specific column, bt or sc")
     if quiz == "sc":
-      column=int(input("which colume do you wanna do, vowels(0),k(1),s(2),t(3),n(4),h(5),m(6),y(7),g(from k(8)),z(from s(9)),d(from t(10)),b(from h(11)),p(from h(12))"))
-      print("so its this one yh", vowels[column])
-      word=random.randint(vowels[column])
+      column=int(input("""which colume do you wanna do, vowels(0),k(1),s(2),t(3),n(4),h(5),m(6),y(7),
+g(from k(8)),z(from s(9)),d(from t(10)),b(from h(11)),p(from h(12))
+                       """))
+      print("so its this one yh", vowels[column],"""(pls note anytime from now if you type break,
+            you will go back to home menu)""")
+      test=vowels[column]
+      word=random.randint(0,4)
+      hidden=test[word]
       while n!=10:
-         print(word)
+         guess=input("Whats this character"+ hidden)
+         if guess == "break":
+             break
+         else:
+                
+             #add if they get it right or not, learn it
+             hidden=random.randint(0,4)
+             hidden=test[word]
+             n+=1
 
     else:
         random_column=random.randint(0,11)
         decided=vowels[random_column]
-        hint=input("do you wanna hint on this hidden column, y or n")
+        hint=input("(pls note anytime after this if you type break, you will go back to home menu)do you wanna hint on this hidden column, y or n")
         if hint == "y":
-            print(random_column)
+            print(decided)
+            hidden=random.randint(0,4)
+            hidden=decided[hidden]
+            while n != 10:
+                guess=input("Whats this character"+ hidden)
+                if guess == "break":
+                    break
+                else:
+                
+                    #add if they get it right or not, learn it
+                    hidden=random.randint(0,4)
+                    hidden=decided[hidden]
+                    n+=1
             
+        else:
+            hidden=random.randint(0,4)
+            hidden=decided[hidden]
+            while n != 10:
+                guess=input("Whats this character"+ hidden)
+                if guess == "break":
+                    break
+                else:
+                
+                    #add if they get it right or not, learn it
+                    hidden=random.randint(0,4)
+                    hidden=decided[hidden]
+                    n+=1
+
+
+### for sc= the column number isnt working, check from(0,12), 12 should be last but some reason out of range
     
 
   
