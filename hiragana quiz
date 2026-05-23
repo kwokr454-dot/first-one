@@ -1,6 +1,31 @@
+import random
+
+def check_right_sc():
+    global correct
+    ### the correct is a variable but it tells the function that it can access the variable even tho it shouldnt
+    pron=pronunciation_map[column]
+    check=pron[word]
+    if check == guess:
+        print("you got it right")
+        correct+=1
+    else:
+        print("you got it wrong and it was: ", check)
+
+
+def check_right_bt():
+    global correct
+        
+    pron=pronunciation_map[random_column]
+    check=pron[hidden]
+    if check == guess:
+        print("you got it right")
+        correct+=1
+    else:
+        print("you got it wrong and it was: ", check)
+        
+
 while True:
     n=0
-    import random
     vowels=[["あ","い","う","え","お"],
     ["か","き","く","け","こ"],
     ["さ","し","す","せ","そ"],
@@ -14,65 +39,147 @@ while True:
     ["ば","び","ぶ","べ","ぼ"],
     ["ぱ","ぴ","ぷ","ぺ","ぽ"]]
 
+    
+    pronunciation_map = [
+    ["a", "i", "u", "e", "o"],          # vowels (row 0)
+    ["ka", "ki", "ku", "ke", "ko"],      # k-row (row 1)
+    ["sa", "shi", "su", "se", "so"],    # s-row (row 2)
+    ["ta", "chi", "tsu", "te", "to"],    # t-row (row 3)
+    ["na", "ni", "nu", "ne", "no"],      # n-row (row 4)
+    ["ha", "hi", "fu", "he", "ho"],      # h-row (row 5)
+    ["ya", "yu", "yo"],                  # y-row (row 6) Note: only 3 items!
+    ["ga", "gi", "gu", "ge", "go"],      # g-row (row 7)
+    ["za", "ji", "zu", "ze", "zo"],      # z-row (row 8)
+    ["da", "ji", "zu", "de", "do"],      # d-row (row 9)
+    ["ba", "bi", "bu", "be", "bo"],      # b-row (row 10)
+    ["pa", "pi", "pu", "pe", "po"]      # p-row (row 11)
+                        ]
+
+    
+
     quiz=input("do you wanna do a blind test or target specific column, bt or sc")
+
+
+    
     if quiz == "sc":
-      column=int(input("""which colume do you wanna do, vowels(0),k(1),s(2),t(3),n(4),h(5),m(6),y(7),
-g(from k(8)),z(from s(9)),d(from t(10)),b(from h(11)),p(from h(12))
-                       """))
-      print("so its this one yh", vowels[column],"""(pls note anytime from now if you type break,
+        column=int(input("""which colume do you wanna do, vowels(0),k(1),s(2),t(3),n(4),h(5),y(6),
+g(from k(7)),z(from s(8)),d(from t(9)),b(from h(10)),p(from h(11)"""))
+
+
+        
+        if column == 6:
+    
+            print("so its this one yh", vowels[column],"""(pls note anytime from now if you type break,
             you will go back to home menu)""")
-      test=vowels[column]
-      word=random.randint(0,4)
-      hidden=test[word]
-      while n!=10:
-         guess=input("Whats this character"+ hidden)
-         if guess == "break":
-             break
-         else:
+            test=vowels[column]
+            word=random.randint(0,2)
+            hidden=test[word]
+            correct=0
+            while n!=10:
+                guess=input("Whats this character"+ hidden)
+                if guess == "break":
+                    break
+                else:
+                    check_right_sc()
+                    ###function1
+                    hidden=random.randint(0,4)
+                    hidden=test[word]
+                    n+=1
                 
-             #add if they get it right or not, learn it
-             hidden=random.randint(0,4)
-             hidden=test[word]
-             n+=1
+                print(correct, "/10")
+            if correct == 10:
+                print("No way you got full marks, im proud, now try a different column or mode!")
+            else:
+                print(f"you got {correct} and its really good, try again tho!")
+
+                
+        else:
+            print("so its this one yh", vowels[column],"""(pls note anytime from now if you type break,
+            you will go back to home menu)""")
+            test=vowels[column]
+            word=random.randint(0,4)
+            hidden=test[word]
+            correct=0
+            while n!=10:
+                
+                guess=input("Whats this character"+ hidden)
+                if guess == "break":
+                    break
+                else:
+                    check_right_sc()
+                    ###function1
+                    word=random.randint(0,4)
+                    hidden=test[word]
+                    n+=1
+
+                print(correct,"/10")
+            if correct == 10:
+                print("No way you got full marks, im proud, now try a different column or mode!")
+            else:
+                print(f"you got {correct} correct and its really good, try again tho!")
+                ### new thing: f= formatted so i dont have to right ", correct," everytime
+                
+                
+### bt starts here
+
+
+
+
 
     else:
         random_column=random.randint(0,11)
         decided=vowels[random_column]
         hint=input("(pls note anytime after this if you type break, you will go back to home menu)do you wanna hint on this hidden column, y or n")
+        correct = 0
+
+
         if hint == "y":
             print(decided)
             hidden=random.randint(0,4)
-            hidden=decided[hidden]
+            hidden1=decided[hidden]
             while n != 10:
-                guess=input("Whats this character"+ hidden)
+                guess=input("Whats this character"+ hidden1)
                 if guess == "break":
                     break
                 else:
-                
-                    #add if they get it right or not, learn it
+                    check_right_bt()
+                    ###function2
                     hidden=random.randint(0,4)
-                    hidden=decided[hidden]
+                    hidden1=decided[hidden]
                     n+=1
-            
-        else:
+                    print(correct, "/10")
+                    
+                if correct == 10:
+                    print("No way you got full marks, im proud, now try a different column or mode!")
+                else:
+                    print(f"you got {correct} correct and its really good, try again tho!")
+
+                
+        else:   
             hidden=random.randint(0,4)
-            hidden=decided[hidden]
+            hidden1=decided[hidden]
             while n != 10:
-                guess=input("Whats this character"+ hidden)
+                guess=input("Whats this character"+ hidden1)
                 if guess == "break":
                     break
                 else:
-                
-                    #add if they get it right or not, learn it
+                    check_right_bt()
+                    ###function2
                     hidden=random.randint(0,4)
-                    hidden=decided[hidden]
+                    hidden1=decided[hidden]
                     n+=1
+                    print(correct, "/10")
+                    
+                if correct == 10:
+                    print("No way you got full marks, im proud, now try a different column or mode!")
+                else:
+                    print(f"you got {correct} correct and its really good, try again tho!")
 
 
-### for sc= the column number isnt working, check from(0,12), 12 should be last but some reason out of range
-### add dictionary to list symbol: sound
-### check gemini
-###learn open()
 
+####1. The File Saver (High Score System)
+####2. Katakana Mode (The Language Expansion)
+####3. The "Missed Character" Review List (The Logic Upgrade)
+                    
   
 
