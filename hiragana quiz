@@ -22,6 +22,33 @@ def check_right_bt():
         correct+=1
     else:
         print("you got it wrong and it was: ", check)
+
+
+
+def saving_high_score():
+    try:
+        ### try is for doing it and if it doesnt work, it goes to except, like if else
+        my_file = open("highscore.txt", "r")
+        ### highscore.txt is the location assigned and r means read(w means write) which is the job assigned to it
+        ### open is to basically physically open a file
+        high_score = int(my_file.read())
+        
+        my_file.close()
+        ### closing the file as the data has already been extracted
+    except:
+        ### this means the try didnt work, which made the high_score = 0
+        high_score=0
+
+    if high_score<correct:
+        print("you got a new high score")
+        my_file = open("highscore.txt", "w")
+        high_score = my_file.write(str(correct))
+        my_file.close()
+    elif high_score == correct:
+        print("you got the same as your high score, try again to beat")
+    else:
+        print("i cant lie, you did really good but it was still lower than your high score")
+        
         
 
 while True:
@@ -57,7 +84,7 @@ while True:
 
     
 
-    quiz=input("do you wanna do a blind test or target specific column, bt or sc")
+    quiz=input("do you wanna do a blind test or target specific column or general quiz(50 question and saved), bt or sc or gq")
 
 
     
@@ -126,7 +153,7 @@ g(from k(7)),z(from s(8)),d(from t(9)),b(from h(10)),p(from h(11)"""))
 
 
 
-    else:
+    elif quiz == "bt":
         random_column=random.randint(0,11)
         decided=vowels[random_column]
         hint=input("(pls note anytime after this if you type break, you will go back to home menu)do you wanna hint on this hidden column, y or n")
@@ -177,9 +204,36 @@ g(from k(7)),z(from s(8)),d(from t(9)),b(from h(10)),p(from h(11)"""))
 
 
 
-####1. The File Saver (High Score System)
-####2. Katakana Mode (The Language Expansion)
-####3. The "Missed Character" Review List (The Logic Upgrade)
+
+    else:
+        correct=0
+        times=1
+        while n != 50:
+            
+            random_column=random.randint(0,11)
+            decided=vowels[random_column]
+            random_decided=random.randint(0,len(decided)-1)
+            letter=decided[random_decided]
+            pron_column=pronunciation_map[random_column]
+            pron=pron_column[random_decided]
+            
+            guess=input(f"{times}. Whats this character {letter}")
+            if guess == pron:
+                print("you got it right")
+                correct+=1
+                n+=1
+                times+=1
+            else:
+                print("You got it wrong and it was: ", pron)
+                n+=1
+                times+=1
+        print(f"your results are out and you got {correct} /50")
+        saving_high_score()
+        
+####1. The File Saver (High Score System) = true
+####2. Katakana Mode (The Language Expansion) = false 
+####3. The "Missed Character" Review List (The Logic Upgrade) = false ( active recall for the character that i got wrong)
                     
+
   
 
