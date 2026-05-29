@@ -39,6 +39,7 @@ def saving_high_score():
         ### this means the try didnt work, which made the high_score = 0
         high_score=0
 
+
     if high_score<correct:
         print("you got a new high score")
         my_file = open("highscore.txt", "w")
@@ -66,6 +67,8 @@ while True:
     ["ば","び","ぶ","べ","ぼ"],
     ["ぱ","ぴ","ぷ","ぺ","ぽ"]]
 
+
+
     katakana = [
     ["ア", "イ", "ウ", "エ", "オ"],      # vowels (row 0)
     ["カ", "キ", "ク", "ケ", "コ"],      # k-row (row 1)
@@ -80,6 +83,7 @@ while True:
     ["バ", "ビ", "ブ", "ベ", "ボ"],      # b-row (row 10)
     ["パ", "ピ", "プ", "ペ", "ポ"]       # p-row (row 11)
     ]
+
 
     pronunciation_map = [
     ["a", "i", "u", "e", "o"],          # vowels (row 0)
@@ -223,24 +227,43 @@ g(from k(7)),z(from s(8)),d(from t(9)),b(from h(10)),p(from h(11)"""))
         correct=0
         times=1
         while n != 50:
+            hiraorkata=random.randint(0,1)
+            if hiraorkata==0:
+                random_column=random.randint(0,11)
+                decided=vowels[random_column]
+                random_decided=random.randint(0,len(decided)-1)
+                letter=decided[random_decided]
+                pron_column=pronunciation_map[random_column]
+                pron=pron_column[random_decided]
             
-            random_column=random.randint(0,11)
-            decided=vowels[random_column]
-            random_decided=random.randint(0,len(decided)-1)
-            letter=decided[random_decided]
-            pron_column=pronunciation_map[random_column]
-            pron=pron_column[random_decided]
-            
-            guess=input(f"{times}. Whats this character {letter}")
-            if guess == pron:
-                print("you got it right")
-                correct+=1
-                n+=1
-                times+=1
+                guess=input(f"{times}. Whats this character {letter}")
+                if guess == pron:
+                    print("you got it right")
+                    correct+=1
+                    n+=1
+                    times+=1
+                else:
+                    print("You got it wrong and it was: ", pron)
+                    n+=1
+                    times+=1
             else:
-                print("You got it wrong and it was: ", pron)
-                n+=1
-                times+=1
+                random_column=random.randint(0,11)
+                decided=katakana[random_column]
+                random_decided=random.randint(0,len(decided)-1)
+                letter=decided[random_decided]
+                pron_column=pronunciation_map[random_column]
+                pron=pron_column[random_decided]
+            
+                guess=input(f"{times}. Whats this character {letter}")
+                if guess == pron:
+                    print("you got it right")
+                    correct+=1
+                    n+=1
+                    times+=1
+                else:
+                    print("You got it wrong and it was: ", pron)
+                    n+=1
+                    times+=1
         print(f"your results are out and you got {correct} /50")
         saving_high_score()
         
