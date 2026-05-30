@@ -107,63 +107,118 @@ while True:
 
     
     if quiz == "sc":
+        choice=input("Do you wanna do hiragana or katakana, h or t")
         column=int(input("""which colume do you wanna do, vowels(0),k(1),s(2),t(3),n(4),h(5),y(6),
 g(from k(7)),z(from s(8)),d(from t(9)),b(from h(10)),p(from h(11)"""))
 
 
+        if choice == "h":
+            if column == 6:
         
-        if column == 6:
+                print("so its this one yh", vowels[column],"""(pls note anytime from now if you type break,
+                you will go back to home menu)""")
+                test=vowels[column]
+                word=random.randint(0,2)
+                hidden=test[word]
+                correct=0
+                while n!=10:
+                    guess=input("Whats this character"+ hidden)
+                    if guess == "break":
+                        break
+                    else:
+                        check_right_sc()
+                        ###function1
+                        hidden=random.randint(0,4)
+                        hidden=test[word]
+                        n+=1
+                
+                    print(correct, "/10")
+                if correct == 10:
+                    print("No way you got full marks, im proud, now try a different column or mode!")
+                else:
+                    print(f"you got {correct} and its really good, try again tho!")
     
-            print("so its this one yh", vowels[column],"""(pls note anytime from now if you type break,
-            you will go back to home menu)""")
-            test=vowels[column]
-            word=random.randint(0,2)
-            hidden=test[word]
-            correct=0
-            while n!=10:
-                guess=input("Whats this character"+ hidden)
-                if guess == "break":
-                    break
-                else:
-                    check_right_sc()
-                    ###function1
-                    hidden=random.randint(0,4)
-                    hidden=test[word]
-                    n+=1
                 
-                print(correct, "/10")
-            if correct == 10:
-                print("No way you got full marks, im proud, now try a different column or mode!")
             else:
-                print(f"you got {correct} and its really good, try again tho!")
-
+                print("so its this one yh", vowels[column],"""(pls note anytime from now if you type break,
+                you will go back to home menu)""")
+                test=vowels[column]
+                word=random.randint(0,4)
+                hidden=test[word]
+                correct=0
+                while n!=10:
                 
+                    guess=input("Whats this character"+ hidden)
+                    if guess == "break":
+
+                        ###function1
+                        word=random.randint(0,4)
+                        hidden=test[word]
+                        n+=1
+        
+                    print(correct,"/10")
+                if correct == 10:
+                    print("No way you got full marks, im proud, now try a different column or mode!")
+                else:
+                    print(f"you got {correct} correct and its really good, try again tho!")
+                    ### new thing: f= formatted so i dont have to right ", correct," everytime
+
+                    
+        elif choice == "k":
+            if column == 6:
+        
+                print("so its this one yh", katakana[column],"""(pls note anytime from now if you type break,
+                you will go back to home menu)""")
+                test=kanakana[column]
+                word=random.randint(0,2)
+                hidden=test[word]
+                correct=0
+                while n!=10:
+                    guess=input("Whats this character"+ hidden)
+                    if guess == "break":
+                        break
+                    else:
+                        check_right_sc()
+                        ###function1
+                        hidden=random.randint(0,4)
+                        hidden=test[word]
+                        n+=1
+                
+                    print(correct, "/10")
+                if correct == 10:
+                    print("No way you got full marks, im proud, now try a different column or mode!")
+                else:
+                    print(f"you got {correct} and its really good, try again tho!")
+    
+                
+            else:
+                print("so its this one yh", katakana[column],"""(pls note anytime from now if you type break,
+                you will go back to home menu)""")
+                test=katakana[column]
+                word=random.randint(0,4)
+                hidden=test[word]
+                correct=0
+                while n!=10:
+                
+                    guess=input("Whats this character"+ hidden)
+                    if guess == "break":
+                        break
+                    else:
+                        check_right_sc()
+                        ###function1
+                        word=random.randint(0,4)
+                        hidden=test[word]
+                        n+=1
+        
+                    print(correct,"/10")
+                if correct == 10:
+                    print("No way you got full marks, im proud, now try a different column or mode!")
+                else:
+                    print(f"you got {correct} correct and its really good, try again tho!")
+                    ### new thing: f= formatted so i dont have to right ", correct," everytime
         else:
-            print("so its this one yh", vowels[column],"""(pls note anytime from now if you type break,
-            you will go back to home menu)""")
-            test=vowels[column]
-            word=random.randint(0,4)
-            hidden=test[word]
-            correct=0
-            while n!=10:
-                
-                guess=input("Whats this character"+ hidden)
-                if guess == "break":
-                    break
-                else:
-                    check_right_sc()
-                    ###function1
-                    word=random.randint(0,4)
-                    hidden=test[word]
-                    n+=1
-
-                print(correct,"/10")
-            if correct == 10:
-                print("No way you got full marks, im proud, now try a different column or mode!")
-            else:
-                print(f"you got {correct} correct and its really good, try again tho!")
-                ### new thing: f= formatted so i dont have to right ", correct," everytime
-                
+            print("You are supposed to pick Hiragana or Katakana")
+            print("QUIT the app, I'm disapointed")
                 
 ### bt starts here
 
@@ -271,6 +326,7 @@ g(from k(7)),z(from s(8)),d(from t(9)),b(from h(10)),p(from h(11)"""))
 ####2. Katakana Mode (The Language Expansion) = false 
 ####3. The "Missed Character" Review List (The Logic Upgrade) = false ( active recall for the character that i got wrong)
                     
+
 
   
 
