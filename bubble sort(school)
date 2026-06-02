@@ -1,1 +1,23 @@
+list=[]
+user_input=input("Enter numbers like 9,2,3,4")
+split_list=user_input.split(",")
+###split() splits all the , and seperates the number
+for num in split_list:
+    list.append(int(num))
+finished=0
+temp=0
+while finished==0:
+    tried=0
+    for i in range(0,len(list)-1):
+        if list[i]>list[i+1]:
+            temp=list[i+1]
+            list[i+1]=list[i]
+            list[i]=temp
+            finished=0
 
+        else:
+            pass
+            tried+=1
+    if tried==(len(list)-1):
+        finished+=1
+print(list)
