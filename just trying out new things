@@ -1,7 +1,7 @@
 num=input("enter num 4 digit")
 newnum=set(list(num))
 ## set removes all value in a list that is duplicate e.g 1123 will be 123 and 1234 will not be changed
-
+### set and list is a data type like boolean
 while len(newnum) != 4:
   print("invalid")
   num=input("enter num 4 digit")
