@@ -1,1 +1,7 @@
-fsdfk
+num=input("enter num 4 digit")
+newnum=set(list(num))
+while len(newnum) != 4:
+  print("invalid")
+  num=input("enter num 4 digit")
+  newnum=set(list(num))
+print("valid")
