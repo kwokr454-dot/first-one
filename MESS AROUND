@@ -1,6 +1,5 @@
 
 while true:
-  import random
   n=0
   times=int(input("how many times"))
   while n!=times:
