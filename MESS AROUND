@@ -1,4 +1,3 @@
-
 while true:
   n=0
   times=int(input("how many times"))
