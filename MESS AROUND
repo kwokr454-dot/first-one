@@ -4,4 +4,6 @@ while true:
   while n!=times:
     print(f"you are {times} years old")
   if times<=18:
-    print("
+    print("youre under 18")
+  else:
+  
