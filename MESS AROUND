@@ -3,4 +3,5 @@ while true:
   times=int(input("how old"))
   while n!=times:
     print(f"you are {times} years old")
-  if times
+  if times<=18:
+    print("
