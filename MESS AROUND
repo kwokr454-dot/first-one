@@ -6,4 +6,4 @@ while true:
   if times<=18:
     print("youre under 18")
   else:
-    print("
+    print("youre over 18")
