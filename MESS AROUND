@@ -5,6 +5,7 @@ while true:
     print(f"you are {times} years old")
   if times<=18:
     print("youre under 18")
+    hi=list(input("name me 5 fruits")
   else:
     print("youre over 18")
 
