@@ -9,3 +9,4 @@ while true:
   else:
     print("youre over 18")
     hi=list(input("name me 5 countries")
+
