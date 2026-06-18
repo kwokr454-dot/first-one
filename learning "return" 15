@@ -5,3 +5,4 @@ def get_player_data():
     return name, score, level
 
 print(get_player_data())
+##itll print Alex,450,5
