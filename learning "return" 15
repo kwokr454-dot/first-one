@@ -1,0 +1,5 @@
+def get_player_data():
+    name = "Alex"
+    score = 450
+    level = 5
+    return name, score, level
