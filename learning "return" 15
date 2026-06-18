@@ -7,6 +7,12 @@ def get_player_data():
 print(get_player_data())
 ##itll print Alex,450,5
 
+
+
+
+
+
+
 def register_username():
     username = input("Create a username: ")
     
