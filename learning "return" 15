@@ -6,3 +6,18 @@ def get_player_data():
 
 print(get_player_data())
 ##itll print Alex,450,5
+
+def register_username():
+    username = input("Create a username: ")
+    
+    # SELECTION BREAK: Check if the username is too short
+    if len(username) < 3:
+        print("Error: Username must be at least 3 characters long!")
+        return  # EMERGENCY BRAKE: Exits the function right here!
+    
+    # This section ONLY runs if the username passed the selection check above
+    print("Checking database...")
+    print(f"Account created successfully for: {username}")
+
+# --- MAIN SCRIPT ---
+register_username()
