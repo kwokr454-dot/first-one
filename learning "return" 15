@@ -12,7 +12,6 @@ print(get_player_data())
 
 
 
-
 def register_username():
     username = input("Create a username: ")
     
