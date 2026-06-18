@@ -1,0 +1,11 @@
+## --- THE PROFESSIONAL REPLACEMENT FOR GLOBAL ---
+
+# 1. The function does the work inside its own box and throws the result back
+def add_points(score):
+    return score + 5  
+
+# 2. The main script catches the result and updates its own variable
+player_score = 10
+player_score = add_points(player_score)  # Replaces 'global' entirely!
+
+print(player_score)  # Output: 15
