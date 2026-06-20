@@ -1,0 +1,6 @@
+my_file = open("scores(hiragana).txt", "r")
+for line in my_file:
+    clean_line = line.strip()
+    split_data = clean_line.split(",")
+    print(split_data)
+my_file.close()
