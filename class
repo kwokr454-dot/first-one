@@ -1,5 +1,6 @@
 class bucket:
     def __init__(self,name,age):
+        ##the first parameter is actually the object of the rest in a class
         ##self is the bit where the code know which person to use p1p2
         
         self.name=name
