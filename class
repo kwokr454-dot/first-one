@@ -1,0 +1,20 @@
+class bucket:
+    def __init__(self,name,age):
+        ##self is the bit where the code know which person to use p1p2
+        
+        self.name=name
+        ##you have to name what the ma,e and age will be
+        self.age=age
+    def celebrate_birthday(self):
+        
+        self.age+=1
+        print(f"Happy bday{self.name}, youre now {self.age}")
+
+
+
+hi=input("enter name,age:")
+hii=hi.split(",")
+name=hii[0]
+age=int(hii[1])
+p1=bucket(name,age)
+p1.celebrate_birthday()
