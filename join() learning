@@ -1,0 +1,2 @@
+### join() is the inverse of split()
+## e.g if you have a word and you do join"-", e.g word="cat", it would end up c-a-t
