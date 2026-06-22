@@ -1,2 +1,11 @@
 ### join() is the inverse of split()
 ## e.g if you have a word and you do join"-", e.g word="cat", it would end up c-a-t
+
+w = input("Please enter a word: ")
+my_list = list(w)
+
+# This "joins" the list back together into a string
+# The "" means: "join them with nothing in between"
+clean_version = "".join(my_list)
+
+print(clean_version)
