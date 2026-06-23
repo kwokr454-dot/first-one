@@ -11,4 +11,4 @@ def binary_search(l,value):
 
 list1=[2,3,6,8]
 binary_search(list1,3)
-        
+
