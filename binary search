@@ -1,14 +1,19 @@
 def binary_search(l,value):
-    l=list1
-    index=len(l)/2
-    if l[index]>int(value):
-        l=(0,index)
-    elif l[index]<int(value):
-        l=(index,len(list))
+    l=list[list_input]
+    index=(len(l))//2
+    w=l[index]
+    if int(w)>value:
+        l=l[0:index]
+        binary_search(l,value)
+    elif int(w)<value:
+        l=l[index:len(l)]
+        binary_search(l,value)
     else:
         print("found")
-        return True
+        return binary_search(l,value)
 
-list1=[2,3,6,8]
-binary_search(list1,3)
+list_input=input("Enter the list")
+value=int(input("Enter the number"))
+binary_search(list_input,value)
+        
 
