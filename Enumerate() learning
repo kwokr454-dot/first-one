@@ -1,1 +1,9 @@
+def to_enumerate(l):
+    l=list(l.split(","))
+    for i,x in enumerate(l):
+        print(i+1,":",x)
 
+    return l
+
+list1=input("enter anything but seperate with , no space")
+to_enumerate(list1)
