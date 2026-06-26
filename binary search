@@ -5,7 +5,6 @@ def binary_search(l,value):
     w=l[index]
     if len(l) != 1:
 
-
         try:
             if int(w)>value:
                 return binary_search(l[0:index],value)
