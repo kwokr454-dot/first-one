@@ -1,1 +1,17 @@
+list1=["car","book","tea"]
+
+list1.append("hand")
+#this will add hand to the list
+#becoming ["car","book","tea","hand"][
+print(list1)
+
+item=list1.pop()
+print(item)
+print(list1)
+#pop() removes an item and return the item, so if i print item
+# it just gives me the popped, pop() with no index automatically prints the last one in list
+
+item=list1.pop(1)
+print(item)
+print(list1)
 
