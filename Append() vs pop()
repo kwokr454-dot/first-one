@@ -15,3 +15,9 @@ item=list1.pop(1)
 print(item)
 print(list1)
 
+
+#['car', 'book', 'tea', 'hand']
+#hand
+#['car', 'book', 'tea']
+#book
+#['car', 'tea']
