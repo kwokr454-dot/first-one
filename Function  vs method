@@ -1,1 +1,20 @@
+#function is something that uses e.g your list as the input
+#method is something that the data knows how to perform the action
+
+l=[1,2,3,4,5,6,7,8]
+
+def function(list1):
+    l=len(list1)
+    print(f"There is {l} numbers")
+    ## e.g len is a fnction becuase it uses list1 as the input to get the numvber
+    ## uses ()
+
+function(l)
+
+c=l.copy()
+c.append(9)
+##this is a function because it doesnt use as an input
+##instead it does something with the list
+
+print(c)
 
