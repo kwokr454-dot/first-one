@@ -1,1 +1,7 @@
-def merge_sort():
+def merge_sort(arr):
+
+
+
+
+list=input("Give me a list and seperate with ,")
+list=list.split(",")
