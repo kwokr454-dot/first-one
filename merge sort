@@ -5,3 +5,6 @@ def merge_sort(arr):
 
 list=input("Give me a list and seperate with ,")
 list=list.split(",")
+list=list(list)
+
+merge_sort(list)
