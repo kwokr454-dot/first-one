@@ -4,7 +4,7 @@ def merge_sort(arr):
   list1=arr[0:half_original]
   list2=arr[half_original:len(arr)]
   
-  
+
 
 
 
