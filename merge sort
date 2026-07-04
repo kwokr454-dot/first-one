@@ -1,9 +1,16 @@
 def merge_sort(arr):
+
+  if len(arr) <= 1:
+        return arr
+
   len_original=len(arr)
   half_original=len(arr)//2
   list1=arr[0:half_original]
   list2=arr[half_original:len(arr)]
-  
+
+  return merge(list1,list2)
+
+def
 
 
 
