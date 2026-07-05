@@ -12,7 +12,7 @@ def merge_sort(arr):
 
 def merged(list):
   
-  
+
 
 
 
