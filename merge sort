@@ -5,13 +5,14 @@ def merge_sort(arr):
 
   len_original=len(arr)
   half_original=len(arr)//2
-  list1=arr[0:half_original]
-  list2=arr[half_original:len(arr)]
+  sorted1=merged(arr[0:half_original])
+  sorted2=merged(arr[half_original:len(arr)])
 
   return merge(list1,list2)
 
-def merge():
-
+def merged(list):
+  
+  
 
 
 
