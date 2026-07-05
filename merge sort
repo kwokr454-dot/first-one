@@ -11,7 +11,7 @@ def merge_sort(arr):
   return merge(list1,list2)
 
 def merged(list):
-  
+
 
 
 
