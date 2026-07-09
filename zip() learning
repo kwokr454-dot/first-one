@@ -14,7 +14,9 @@ paired = list(zip(list1,list2))
 for i,j in zip(list1,list2):
   i=list1[0] #then +1
   j=list2[0] #thne +1
-  
+
+
+
 
 
 
