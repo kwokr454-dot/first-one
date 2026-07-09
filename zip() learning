@@ -5,6 +5,16 @@ list2=(1,2,3)
 
 #to prove it can work with both tuples and list
 
+paired = list(zip(list1,list2))
+
+#so paired will be [("a",1),("b",2),("c",3)]
+
+### you can also do it in a for loop, like enumurate
+
+for i,j in zip(list1,list2):
+  i=list1[0] #then +1
+  j=list2[0] #thne +1
+  
 
 
 
