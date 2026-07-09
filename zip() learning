@@ -1,5 +1,10 @@
 ## basically zip takes multiple iterables like list and tuples and pair their elements together
 
 list1=["a","b","c"]
+list2=(1,2,3)
+
+#to prove it can work with both tuples and list
+
+
 
 
