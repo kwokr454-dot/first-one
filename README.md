@@ -1,45 +1,27 @@
 JAPAN Journey to Tokyo: Software Engineering + N2 passed...
 
-The Vision
-My goal is to move to Japan and get a Software Engineering role at a top-tier tech firm (Targets: Mercari, Rakuten, LINE). I am currently building my skills to do so which are (high-level) Python development and JLPT N2 Japanese proficiency.
+Hi, I'm Ryan! 👋
+I'm a student in the UK, building my path toward becoming a Data Engineer with a long-term goal of working in Tokyo.
 
----
+🛠 My Toolkit
+Languages: Python, SQL, Go.
 
-Tech Stack & Skills
-- Languages: Python (Primary), Japanese (JLPT Study in Progress)
-- Tools: Git, GitHub, Linux
-- Education: Focused on Mathematics and Science in the UK
-- Daily Discipline: Competitive swimming and active software portfolio building
+Hardware: Raspberry Pi 5, Lenovo Legion Go, and a gaming laptop.
 
----
+Environment: Learning Linux for infrastructure and data pipelines.
 
-🗺️ Japanese Language Roadmap
-- Current Stage: Genki I (Lesson 2) + Hiragana/Katakana Mastery
-- Daily Routine: Minimum 45m study; targeting "Deep Work" sessions of 90m+
-- Start Date: April 27, 2026
-- Goal: N2 Proficiency by like 2030
+📈 What I'm Working On
+Coding: Aiming for 5 GitHub contributions every day.
 
----
+Japanese: Studying Genki I (currently at Lesson 6), aiming for JLPT N2.
 
-📈 Study Log & Progress
-- I have been doing 30-40 minutes a day, on japanese GENKI workbook...
+Data: Learning how to manage and organize data using SQLite.
 
-May 12, 2026: The Breakthrough Session
-- Status: Completed a high-intensity 1h 30m study block.
-- Focus: Mastered the nuance of sentence endings (`yo` vs `ne`) and formal vs. casual negation.
-- Win: Successfully transitioned from physical CDs to a mobile-integrated audio workflow after troubleshooting compatibility issues.
-- Reflection: Prioritizing listening comprehension and natural rhythm over raw page speed. Depth > Quantity.
+🎹 Outside of Code
+Music: Classical piano (Rachmaninoff) and composing.
 
- April 27, 2026: The Start
-- Status: Commenced formal self-study using Genki materials.
-- Focus: Establishing the foundation for a long-term relocation to Japan.
+Gaming: The Farmer Was Replaced, Rocket League, Rainbow Six Siege.
 
----
+Hobbies: Tracking the market value of my Pokémon card collection.
 
-Connect
-I'm always looking to connect with other devs or Japanese learners.
-- GitHub: kwokr454-dot
-- Location: London, UK 🇬🇧 -> Tokyo, Japan
-
-
-written when i was 15. hopefully all this would come true!!!
+Last Updated: July 2026
