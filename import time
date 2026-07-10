@@ -10,3 +10,4 @@ print("I'm back! And I know that the current time is:")
 print(time.ctime()) # This prints the current date and time
 
 ## sleep() pauses
+## ctime == current time
