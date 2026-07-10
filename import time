@@ -3,3 +3,8 @@ import time
 ### basically an internal clock
 
 ## it can perform differen things like pausing or like givin you the time
+
+print("Hello! I am going to pause for 3 seconds...")
+time.sleep(3)  # This forces the script to wait
+print("I'm back! And I know that the current time is:")
+print(time.ctime()) # This prints the current date and time
