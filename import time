@@ -1,3 +1,5 @@
 import time
 
 ### basically an internal clock
+
+## it can perform differen things like pausing or like givin you the time
