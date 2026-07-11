@@ -15,4 +15,22 @@ def wrapper():
 wrapper()
 
 
+# but you can do it this way
+
+
+# 1. This is the "Adapter" (The Decorator)
+def my_decorator(func):
+    def wrapper():
+        print("--- BEFORE: Clock started ---")
+        func()  # This runs your original code!
+        print("--- AFTER: Clock stopped ---")
+    return wrapper
+
+# 2. This is your "Original Function"
+@my_decorator
+def my_code():
+    print("Sorting logic running...")
+
+# 3. Execution
+my_code()
 
