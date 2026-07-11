@@ -1,1 +1,18 @@
+## decorator basically allows u to use another function anywher inside the original function
+## this is used as the original way to do it is limited, if u want to add multiple function you need to write it like 50 timnes
+
+#e.g
+
+def my_code():
+    print("Sorting logic running...")
+
+def wrapper():
+    print("--- Before ---")
+    my_code() # You call your code here manually
+    print("--- After ---")
+
+# You call the wrapper
+wrapper()
+
+
 
