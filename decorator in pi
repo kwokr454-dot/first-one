@@ -1,0 +1,29 @@
+import time
+
+def log_execution(func):
+    def wrapper(*args, **kwargs):
+        # Write the start log to a file
+        with open("execution_log.txt", "a") as f:
+            f.write(f"Starting: {func.__name__} at {time.ctime()}\n")
+
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+
+        # Write the finish log to a file
+        with open("execution_log.txt", "a") as f:
+            f.write(f"Finished {func.__name__} in {end - start:.4f}s\n")
+
+        return result
+    return wrapper
+
+@log_execution
+def heavy_calc():
+    time.sleep(1)
+    return sum(range(1000))
+
+# Run the function
+heavy_calc()
+print("Done! Check your log file.")
+result = heavy_calc()
+print(f"The calculation result is: {result}")
