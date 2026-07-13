@@ -1,0 +1,12 @@
+arr=(0,1,2,3,4,5,6,7,8,9)
+
+target=int(input("input a number"))
+
+def two_sum(a,t):
+    for i in a:
+        needed=target-i
+        if (needed in a) and needed != i:
+            return needed,i
+    return False
+
+print(two_sum(arr,target))
