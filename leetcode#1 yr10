@@ -1,12 +1,38 @@
-arr=(0,1,2,3,4,5,6,7,8,9)
+#arr=(0,1,2,3,4,5,6,7,8,9)
+
+#target=int(input("input a number"))
+
+#def two_sum(a,t):
+   #for i in a:
+        #needed=target-i
+        #if (needed in a) and needed != i:
+            return needed,i
+    #return False
+
+#print(two_sum(arr,target))
+
+### new version after 20 mins
+
+arr=list(input("Enter the list"))
+###print(arr)
+
 
 target=int(input("input a number"))
 
 def two_sum(a,t):
+    # a is an arr
+    # all value in a is str
     for i in a:
-        needed=target-i
-        if (needed in a) and needed != i:
-            return needed,i
+        needed=target-int(i)
+        #needed is an int
+        
+        ###print(needed)
+        if (str(needed) in a) and needed != int(i):
+            index_i=a.index(i)
+            index_needed=a.index(str(needed))
+            #needed is a int at this point
+            
+            return (f"index of {index_i}"),(f"index of {index_needed}")
     return False
 
 print(two_sum(arr,target))
