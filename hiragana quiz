@@ -323,7 +323,7 @@ g(from k(7)),z(from s(8)),d(from t(9)),b(from h(10)),p(from h(11)"""))
         saving_high_score()
         
 ####1. The File Saver (High Score System) = true
-####2. Katakana Mode (The Language Expansion) = false 
+####2. Katakana Mode (The Language Expansion) = true
 ####3. The "Missed Character" Review List (The Logic Upgrade) = false ( active recall for the character that i got wrong)
                     
 
