@@ -11,7 +11,7 @@
 
 #print(two_sum(arr,target))
 
-### new version after 20 mins
+################################################ new version 
 
 arr=list(input("Enter the list"))
 ###print(arr)
