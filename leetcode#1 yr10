@@ -25,7 +25,7 @@ def two_sum(a,t):
     for i in a:
         needed=target-int(i)
         #needed is an int
-        
+
         ###print(needed)
         if (str(needed) in a) and needed != int(i):
             index_i=a.index(i)
