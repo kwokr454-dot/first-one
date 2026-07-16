@@ -1,1 +1,1 @@
-
+# Big O notation is basically a "complexity score" for your code. It tells you how much longer your program will take to finish if your input list gets 10, 100, or 1,000,000 times bigger.
