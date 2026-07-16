@@ -9,3 +9,20 @@ def slow_two_sum(nums, target):
         if str(needed) in nums: # Searching is Loop 2 (hidden)
             return True
     return False
+
+
+
+# O(n) - Linear Time
+def fast_two_sum(nums, target):
+    seen = {}
+    for i, num in enumerate(nums): # Loop 1 (only once!)
+        needed = target - num
+        if needed in seen: # Dictionary lookup is instant (O(1))
+            return True
+        seen[num] = i
+    return False
+
+
+### O(1) = constant
+### O(n) = linear
+### O(n^2) = quadratic
