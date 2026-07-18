@@ -7,4 +7,5 @@ nums = [int(x) for x in input("Enter numbers: ").split()]
 #[...]: Wraps everything back into a list.
 
 def two_sum(nums,want):
-  
+  for i in nums:
+    if 
