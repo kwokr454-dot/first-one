@@ -6,4 +6,5 @@ nums = [int(x) for x in input("Enter numbers: ").split()]
 #int(x): Converts each one into an actual number.
 #[...]: Wraps everything back into a list.
 
-def two_sum:
+def two_sum(nums,want):
+  
