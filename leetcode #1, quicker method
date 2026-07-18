@@ -1,11 +1,9 @@
 nums = [int(x) for x in input("Enter numbers: ").split()]
 
 #input("Enter numbers: "): Takes the raw string (e.g., "10 20 30").
-
 #.split(): Chops the string into a list of smaller strings (e.g., ["10", "20", "30"]).
-
 #for x in ...: Loops through those smaller strings one by one.
-
 #int(x): Converts each one into an actual number.
-
 #[...]: Wraps everything back into a list.
+
+def two_sum:
