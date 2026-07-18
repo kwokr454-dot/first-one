@@ -8,4 +8,9 @@ nums = [int(x) for x in input("Enter numbers: ").split()]
 
 def two_sum(nums,want):
   for i in nums:
-    if 
+    if (want-i) in nums and (want-i)!=i:
+      return True
+  return False
+
+
+
