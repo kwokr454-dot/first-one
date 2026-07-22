@@ -11,6 +11,7 @@
 
 #print(two_sum(arr,target))
 
+
 ################################################ new version 
 
 arr=list(input("Enter the list"))
