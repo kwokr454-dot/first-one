@@ -13,8 +13,6 @@ def check_right_sc():
 
 
 
-
-
 def check_right_bt():
     global correct
         
