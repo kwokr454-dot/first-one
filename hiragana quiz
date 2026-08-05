@@ -11,6 +11,8 @@ def check_right_sc():
     else:
         print("you got it wrong and it was: ", check)
 
+
+
 def check_right_bt():
     global correct
         
