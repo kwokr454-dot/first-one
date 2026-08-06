@@ -2,9 +2,12 @@
 ### use code to check the file
 ### count error and put in empty dictionary
 ### output number of error to user
-
+error=0
 try:
 
   file.open()
+  a=file.read()
+  for i in a:
+    
 except:
   file.txt.create()
