@@ -8,6 +8,8 @@ try:
   file.open()
   a=file.read()
   for i in a:
+    if i == "error":
+      error+=1
     
 except:
   file.txt.create()
