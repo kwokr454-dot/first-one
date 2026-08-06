@@ -2,3 +2,8 @@
 ### use code to check the file
 ### count error and put in empty dictionary
 ### output number of error to user
+
+try:
+
+except:
+  file.txt.create()
