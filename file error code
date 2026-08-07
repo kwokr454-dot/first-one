@@ -16,3 +16,5 @@ try:
   file.close()
 except:
   file.txt.create()
+
+print(f"there were {error} errors")
