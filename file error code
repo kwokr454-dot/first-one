@@ -10,7 +10,7 @@ try:
   a=file.read()
   for i in a:
     if i == "error":
-      error+=1
+     error+=1
 
   file.close()
 except:
