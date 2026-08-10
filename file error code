@@ -14,7 +14,7 @@ try:
     if i == "error":
      error+=1
 
-  close()
+  close("file","r")
 except:
   file.create()
 
