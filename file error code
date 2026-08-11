@@ -6,7 +6,6 @@
 
 error=0
 try:
-
   open("file","r")
   a=file.read()
   for i in a:
