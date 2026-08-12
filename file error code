@@ -15,7 +15,7 @@ try:
 
   close("file","r")
 except:
-  file.create()
+  file.create("file")
 
 
 print(f"there were {error} errors")
