@@ -5,6 +5,8 @@
 ### output number of error to user
 
 
+
+
 error=0
 try:
   open("file","r")
