@@ -12,7 +12,7 @@ try:
     if i == "error":
      error+=1
 
-  close("file","r")
+  my_file.close()
 except:
   file.create("file")
 
