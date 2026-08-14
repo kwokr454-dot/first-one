@@ -11,7 +11,7 @@ try:
   for i in my_file:
     ## i wont show as error, it would be like 
     ## 2026-08-01 ERROR Database timeout\n
-    if i == "error":
+    if "error" in i.lower():
      error+=1
 
   my_file.close()
