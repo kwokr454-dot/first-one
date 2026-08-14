@@ -16,7 +16,10 @@ try:
 
   my_file.close()
 except:
-  file.create("file")
+  my_file = open("file.txt", "w")
+  my_file.write("2026-08-01 ERROR Database timeout\n")
+  my_file.close()
+  print("File was missing, so I created it for you! Run the script again.")
 
 
 print(f"there were {error} errors")
