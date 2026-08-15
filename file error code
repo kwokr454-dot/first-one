@@ -7,9 +7,9 @@
 
 error=0
 try:
-  my_file=open("file","r")
+  my_file = open("file", "r")
   for i in my_file:
-    ## i wont show as error, it would be like 
+    ## it wont show as error, it would be like 
     ## 2026-08-01 ERROR Database timeout\n
     if "error" in i.lower():
      error+=1
