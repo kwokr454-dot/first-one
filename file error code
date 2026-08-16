@@ -21,5 +21,4 @@ except:
   my_file.close()
   print("file was missing, so I created it for you! Run the script again.")
 
-
 print(f"there were {error} errors")
