@@ -1,14 +1,25 @@
-def cinema_seats(2D_list,seat_num):
+def cinema_seats(a,b):
+
+if a[b[0]][b[1]] == "0":
+  a[b[0]][b[1]]+=1
+
+  return a
+  
+else:
+  return "seat taken"
 
 
 
-2D_list=[
-["O","O","O","O"]
-,["O","O","O","O"]
-,["O","O","O","O"]
-,["O","O","O","O"]
+array=[
+[0,0,0,0]
+,[0,0,0,0]
+,[0,0,0,0]
+,[0,0,0,0]
 ]
-seat_num=int(input("select which row and which seat from left to right"))
+
+seat=int(input("select which row and which seat from left to right"))
 ## row and positon starts on 0
+
+cinema_seats(array,seat)
   
 
