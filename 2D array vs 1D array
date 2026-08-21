@@ -1,2 +1,6 @@
-def analyze_logs(filename):
+def cinema_seats(2D_list,seat_num):
+
+
+
+  
 
