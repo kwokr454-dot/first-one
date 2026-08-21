@@ -17,8 +17,11 @@ array=[
 ,[0,0,0,0]
 ]
 
-seat=int(input("select which row and which seat from left to right"))
-## row and positon starts on 0
+row = int(input("Enter row (0-3): "))
+col = int(input("Enter seat (0-3): "))
+
+seat = [row, col]
+## row and col starts on 0
 
 cinema_seats(array,seat)
   
