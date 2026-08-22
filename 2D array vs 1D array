@@ -28,7 +28,6 @@ cinema_seats(array,seat)
 
 
 def check_exit(a,b):
-
   if a.lower() == "exit" or b.lower() == "exit":
     exit()
   else:
