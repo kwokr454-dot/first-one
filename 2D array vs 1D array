@@ -1,12 +1,12 @@
 def cinema_seats(a,b):
 
-if a[b[0]][b[1]] == "0":
-  a[b[0]][b[1]]+=1
+  if a[b[0]][b[1]] == 0:
+    a[b[0]][b[1]]+=1
 
-  return a
+    return a
   
-else:
-  return "seat taken"
+  else:
+    return "seat taken"
 
 array=[
 [0,0,0,0]
@@ -18,15 +18,17 @@ array=[
 row = input("Enter row (0-3): ")
 col = input("Enter seat (0-3): ")
 
-row=int(row)
-col=int(col)
 
-seat = [row, col]
+seat = check_exit(row,col)
 ## row and col starts on 0
 
 cinema_seats(array,seat)
 
 
-def check_exit(input):
-  
+def check_exit(a,b):
+
+  if a.lower() == "exit" or b.lower() == "exit":
+    exit()
+  else:
+    return [int(a),int(b)]
 
