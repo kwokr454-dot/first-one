@@ -15,12 +15,18 @@ array=[
 ,[0,0,0,0]
 ]
 
-row = int(input("Enter row (0-3): "))
-col = int(input("Enter seat (0-3): "))
+row = input("Enter row (0-3): ")
+col = input("Enter seat (0-3): ")
+
+row=int(row)
+col=int(col)
 
 seat = [row, col]
 ## row and col starts on 0
 
 cinema_seats(array,seat)
+
+
+def check_exit(input):
   
 
