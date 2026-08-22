@@ -8,6 +8,14 @@ def cinema_seats(a,b):
   else:
     return "seat taken"
 
+
+def check_exit(a,b):
+  if a.lower() == "exit" or b.lower() == "exit":
+    exit()
+  else:
+    return [int(a),int(b)]
+
+
 array=[
 [0,0,0,0]
 ,[0,0,0,0]
@@ -24,12 +32,8 @@ col = input("Enter seat (0-3): ")
 seat = check_exit(row,col)
 ## row and col starts on 0
 
-cinema_seats(array,seat)
+print(cinema_seats(array,seat))
 
 
-def check_exit(a,b):
-  if a.lower() == "exit" or b.lower() == "exit":
-    exit()
-  else:
-    return [int(a),int(b)]
+
 
