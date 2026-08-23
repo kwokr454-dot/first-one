@@ -24,7 +24,7 @@ array=[
 ]
 
 
-
+print(array)
 row = input("Enter row (0-3): ")
 col = input("Enter seat (0-3): ")
 
