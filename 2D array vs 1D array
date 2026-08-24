@@ -8,7 +8,6 @@ def cinema_seats(a,b):
   else:
     return "seat taken"
 
-\
 
 def check_exit(a,b):
   if a.lower() == "exit" or b.lower() == "exit":
