@@ -1,21 +1,21 @@
 class 2darray:
 
-def cinema_seats(a,b):
+  def cinema_seats(a,b):
 
-  if a[b[0]][b[1]] == 0:
-    a[b[0]][b[1]]+=1
+    if a[b[0]][b[1]] == 0:
+      a[b[0]][b[1]]+=1
 
-    return a
+      return a
   
-  else:
-    return "seat taken"
+    else:
+      return "seat taken"
 
 
-def check_exit(a,b):
-  if a.lower() == "exit" or b.lower() == "exit":
-    exit()
-  else:
-    return [int(a),int(b)]
+  def check_exit(a,b):
+    if a.lower() == "exit" or b.lower() == "exit":
+      exit()
+    else:
+      return [int(a),int(b)]
 
 
 array=[
