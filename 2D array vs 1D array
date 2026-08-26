@@ -29,16 +29,16 @@ array=[
 
 
 print(array)
-row = input("Enter row (0-3): ")
-col = input("Enter seat (0-3): ")
+row = input("Enter row (0-4): ")
+col = input("Enter seat (0-4): ")
 
 
 while row.lower() != "exit" or col.lower() != "exit":
 
   seat = check_exit(row,col)
   print(cinema_seats(array,seat))
-  row = input("Enter row (0-3): ")
-  col = input("Enter seat (0-3): ")
+  row = input("Enter row (0-4): ")
+  col = input("Enter seat (0-4): ")
 
 ## row and col starts on 0
 print("You have finished purchasing")
