@@ -9,14 +9,11 @@ class 2darray:
     else:
       return "seat taken"
 
-
-
   def check_exit(a,b):
     if a.lower() == "exit" or b.lower() == "exit":
       exit()
     else:
       return [int(a),int(b)]
-
 
 array=[
 [0,0,0,0]
