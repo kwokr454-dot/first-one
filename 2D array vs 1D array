@@ -6,7 +6,6 @@ class 2darray:
       a[b[0]][b[1]]+=1
 
       return a
-  
     else:
       return "seat taken"
 
