@@ -1,0 +1,76 @@
+import sqlite3
+import os
+
+# --- STEP 1: CREATE A FAKE RAW LOG FILE (The Source) ---
+log_data = """[2026-08-27 10:00:12] INFO: Server started successfully
+[2026-08-27 10:05:43] WARNING: High memory usage detected
+[2026-08-27 10:12:01] ERROR: Database connection timeout
+[2026-08-27 10:15:30] INFO: User 404 logged in
+[2026-08-27 10:20:05] ERROR: Failed to load configuration file
+"""
+
+with open("server_logs.log", "w") as f:
+    f.write(log_data)
+
+print("--- 1. Raw log file created ---")
+
+
+# --- STEP 2: SETUP THE DATABASE (The Destination) ---
+# This creates a local SQLite database file called 'logs.db'
+conn = sqlite3.connect("logs.db")
+cursor = conn.cursor()
+
+# Create a table to hold our structured data
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS system_logs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        timestamp TEXT,
+        level TEXT,
+        message TEXT
+    )
+""")
+conn.commit()
+
+
+# --- STEP 3: READ, TRANSFORM, AND LOAD (The Pipeline) ---
+print("--- 2. Processing and loading logs into database ---")
+
+with open("server_logs.log", "r") as f:
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+            
+        # TRANSFORMATION: Parsing the messy text string
+        # Example line: [2026-08-27 10:00:12] INFO: Server started successfully
+        
+        # Split by ']' to isolate the timestamp part
+        parts = line.split("]")
+        timestamp = parts[0].replace("[", "").strip()
+        
+        # Split the remaining text by ':' to get the log level and message
+        remainder = parts[1].strip() # e.g., "INFO: Server started successfully"
+        level, message = remainder.split(":", 1)
+        level = level.strip()
+        message = message.strip()
+        
+        # LOAD: Insert the clean, structured data into the database
+        cursor.execute("""
+            INSERT INTO system_logs (timestamp, level, message)
+            VALUES (?, ?, ?)
+        """, (timestamp, level, message))
+
+conn.commit()
+print("--- 3. Pipeline complete! Data saved to 'logs.db' ---")
+
+
+# --- STEP 4: VERIFY BY QUERYING THE DATABASE ---
+print("\n--- Querying Database: Checking for ERROR logs ---")
+cursor.execute("SELECT timestamp, message FROM system_logs WHERE level = 'ERROR'")
+errors = cursor.fetchall()
+
+for err in errors:
+    print(f"[{err[0]}] ALERT: {err[1]}")
+
+# Close the database connection cleanly
+conn.close()
