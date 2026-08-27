@@ -15,7 +15,7 @@ with open("server_logs.log", "w") as f:
 print("--- 1. Raw log file created ---")
 
 
-# --- STEP 2: SETUP THE DATABASE (The Destination) --
+# --- STEP 2: SETUP THE DATABASE (The Destination) ---
 # This creates a local SQLite database file called 'logs.db'
 conn = sqlite3.connect("logs.db")
 cursor = conn.cursor()
