@@ -1,4 +1,4 @@
-def predicted_grades(grades,chart):
+def predicted_grades(sub,gra,lis):
 
 
 
@@ -8,3 +8,4 @@ subjects=input("enter the subjects")
 grades=input("enter the predicted grades of this subject")
 listofgrades=[]
 
+predicted_grades(subjecst,grades,listofgrades)
