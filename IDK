@@ -1,1 +1,7 @@
+def predicted_grades(grades,chart):
 
+
+
+
+
+subjects=input("enter the subjects")
