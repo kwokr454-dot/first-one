@@ -7,3 +7,4 @@ def predicted_grades(grades,chart):
 subjects=input("enter the subjects")
 grades=input("enter the predicted grades of this subject")
 listofgrades=[]
+
