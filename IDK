@@ -2,11 +2,11 @@ def predicted_grades(sub,gra,lis):
   if sub in lis:
     return "subject already listed"
   else:
-
+    lis[sub]=gra
 
 
 subjects=input("enter the subjects")
-grades=input("enter the predicted grades of this subject")
+grades=int(input("enter the predicted grades of this subject"))
 listofgrades={}
 
 predicted_grades(subjecst,grades,listofgrades)
