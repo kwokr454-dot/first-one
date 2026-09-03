@@ -1,7 +1,7 @@
 def predicted_grades(sub,gra,lis):
   if sub in lis:
     return "subject already listed"
-
+  else:
 
 
 
