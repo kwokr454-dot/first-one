@@ -1,6 +1,6 @@
 def predicted_grades(sub,gra,lis):
   if sub in lis:
-    return "subject already listed"
+    lis[sub]=gra
   else:
     lis[sub]=gra
     return lis
