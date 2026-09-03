@@ -3,7 +3,8 @@ def predicted_grades(sub,gra,lis):
     lis[sub]=gra
   else:
     lis[sub]=gra
-    return lis
+  
+  return lis
 
 subjects=input("enter the subjects")
 grades=int(input("enter the predicted grades of this subject"))
