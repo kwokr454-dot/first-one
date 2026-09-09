@@ -6,7 +6,7 @@ def predicted_grades(sub,gra,lis):
   
   return lis
 
-subjects=input("enter the subjects"
+subjects=input("enter the subjects")
 grades=int(input("enter the predicted grades of this subject"))
 listofgrades={}
 
