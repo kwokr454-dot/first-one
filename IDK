@@ -2,7 +2,7 @@ def predicted_grades(sub,gra,lis):
   if sub in lis:
     lis[sub]=gra
   else:
-    lis[sub]=a
+    lis[sub]=gra
   
   return lis
 
