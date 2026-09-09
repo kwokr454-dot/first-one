@@ -11,6 +11,10 @@ grades=int(input("enter the predicted grades of this subject"))
 listofgrades={}
 
 
-print(predicted_grades(subjecst,grades,listofgrades))
+
+
+
+
+print (predicted_grades(subjecst,grades,listofgrades))
 
 
