@@ -12,9 +12,6 @@ listofgrades={}
 
 
 
-
-
-
-print (predicted_grades(subjecst,grades,listofgrades))
+print(predicted_grades(subjecst,grades,listofgrades))
 
 
