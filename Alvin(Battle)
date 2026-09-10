@@ -1,31 +1,48 @@
 victory=0
 battle_round=0
-Tank_robot_HP = 500
-Tank_robot_attack = 50
+Tank_robot_HP = 800
+Tank_robot_attack = 150
+Tank_robot_shield = 350
+Tank_robot_attack_multiplier = 1
 
+Attack_robot_HP = 500
+Attack_robot_attack = 400
+Attack_robot_shield = 400
+Attack_robot_attack_multiplier = 1
 
-def Tank_robot(opp_HP,opp_):
-  global Tank_robot_HP,battle_round,victory
+### 1300 cp in total for each robot
+### after finishing do everything back into dictionary instead of listing
+
+def Tank_robot(opp_HP,opp_shield):
+  global battle_round,victory
+  global Attack_robot_HP,Tank_robot_attack_multiplier,Attack_robot_shield
 
   attack=input("Which attack u want, 'attack_1' or 'attack_2'")
   if attack == "attack_1":
     a = attack_1()
     print(a)
     if a == "damage":
-      opp_HP-=50
-      battle_round+=1
-      return "round done"
+      if Attack_robot_shield<=a and Attack_robot_shield>0:
+        Attack_robot_shield = 0 
+        return "Attack_robot_shield broke"
+      elif (Attack_robot_shield+50) > a:
+        Attack_robot_shield-=50
+      else:
+        Attack_robot_HP-=50
+        battle_round+=1
+        return "round done"
     
     else:
       print("because u gave up on move 1, you will now automatically do move 2")
       attack_2()
-      Tank_robot_attack+=5
+      Tank_robot_attack_multiplier = Tank_robot_attack_multiplier*2
+      return "round done"
         
   else:
     a = attack_2()
     print(a)
     if a == "Update attack":
-      Tank_robot_attack+=5
+      Tank_robot_attack_multiplier = Tank_robot_attack_multiplier*2
       battle_round+=1
       return "round done"
     
@@ -33,21 +50,22 @@ def Tank_robot(opp_HP,opp_):
       print("because u gave up on move 2, you will now automatically do move 1")
       attack_1()
       opp_HP-=50
+      return "round done"
         
 
 
 
 def Damage_robot(hp):
 
-def shield_robot(hp):
-
+###def shield_robot(hp):
+### skip for now after done
 
 def attack_1():
   print("This is the 'HIT' move")
   print("This will do 50 Base damage depending on the opponent's status on sheid...")
   yesorno = input("would u like to continue and use the move, y or n, if n then the other move on ur robot menu would be done automatically")
   if yesorno == y:
-    return "damage"
+    return 50
   else:
     return "reselect move"
 
