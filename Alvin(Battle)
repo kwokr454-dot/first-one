@@ -5,8 +5,8 @@ Tank_robot_HP = 500
 def Tank_robot():
   global Tank_robot_HP
 
-  attack=input("Which attack u want, '' or ''  or check status")
-  if attack == 
+  attack=input("Which attack u want, 'attack_1' or 'attack_2'  or check status")
+  if attack == "attack_1"
   
   
 def Damage_robot(hp):
@@ -14,5 +14,10 @@ def Damage_robot(hp):
 def shield_robot(hp):
 
 def attack_1():
+
+def attack_2():
+
+def attack_3():
+
   
   
