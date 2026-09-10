@@ -13,6 +13,9 @@ Attack_robot_attack_multiplier = 1
 ### 1300 cp in total for each robot
 ### after finishing do everything back into dictionary instead of listing
 
+
+
+
 def Tank_robot(opp_HP,opp_shield):
   global battle_round,victory
   global Attack_robot_HP,Tank_robot_attack_multiplier,Attack_robot_shield
@@ -60,6 +63,11 @@ def Damage_robot(hp):
 ###def shield_robot(hp):
 ### skip for now after done
 
+
+
+
+
+
 def attack_1():
   print("This is the 'HIT' move")
   print("This will do 50 Base damage depending on the opponent's status on sheid...")
@@ -86,3 +94,4 @@ def attack_3():
 
   
 #move 4 will be making opponent shield weaker and move 5 will be making opponent attack weaker  
+#Robot 3 will be added if robot 1/2 actually works and battle works
