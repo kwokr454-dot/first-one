@@ -1,23 +1,70 @@
 victory=0
 battle_round=0
 Tank_robot_HP = 500
+Tank_robot_attack = 50
 
-def Tank_robot():
-  global Tank_robot_HP
 
-  attack=input("Which attack u want, 'attack_1' or 'attack_2'  or check status")
-  if attack == "attack_1"
-  
-  
+def Tank_robot(opp_HP,opp_):
+  global Tank_robot_HP,battle_round,victory
+
+  attack=input("Which attack u want, 'attack_1' or 'attack_2'")
+  if attack == "attack_1":
+    a = attack_1()
+    print(a)
+    if a == "damage":
+      opp_HP-=50
+      battle_round+=1
+      return "round done"
+    
+    else:
+      print("because u gave up on move 1, you will now automatically do move 2")
+      attack_2()
+      Tank_robot_attack+=5
+        
+  else:
+    a = attack_2()
+    print(a)
+    if a == "Update attack":
+      Tank_robot_attack+=5
+      battle_round+=1
+      return "round done"
+    
+    else:
+      print("because u gave up on move 2, you will now automatically do move 1")
+      attack_1()
+      opp_HP-=50
+        
+
+
+
 def Damage_robot(hp):
 
 def shield_robot(hp):
 
+
 def attack_1():
+  print("This is the 'HIT' move")
+  print("This will do 50 Base damage depending on the opponent's status on sheid...")
+  yesorno = input("would u like to continue and use the move, y or n, if n then the other move on ur robot menu would be done automatically")
+  if yesorno == y:
+    return "damage"
+  else:
+    return "reselect move"
+
+
 
 def attack_2():
+  print("This is the 'boost attact' move")
+  print("This will level up ur base attack to x2")
+  yesorno = input("would u like to continue and use the move, y or n, if n then the other move on ur robot menu would be done automatically")
+  if yesorno == y:
+    return "Update attack"
+  else:
+    return "reselect move"
+
+
 
 def attack_3():
 
   
-  
+#move 4 will be making opponent shield weaker and move 5 will be making opponent attack weaker  
