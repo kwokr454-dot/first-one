@@ -89,13 +89,12 @@ def attack_2():
     return "reselect move"
 
 
-
 def attack_3():
   print("This is the 'weaken shield' move")
   print("This will make your opponent shield weaker")
   yesorno = input("would u like to continue and use the move, y or n, if n then the other move on ur robot menu would be done automatically")
   if yesorno == y:
-    return "Shield update'opp'"
+    return "Shield update"
   else:
     return "reselect move"
 
