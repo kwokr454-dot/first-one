@@ -100,7 +100,7 @@ def attack_3():
 
 def attack_4():
   print("This is the 'weaken attack' move")
-  
+  print("This will make your opponent attack weaker")
 
 #move 4 will be making opponent shield weaker and move 5 will be making opponent attack weaker  
 #Robot 3 will be added if robot 1/2 actually works and battle works
