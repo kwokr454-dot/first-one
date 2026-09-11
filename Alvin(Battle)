@@ -98,6 +98,9 @@ def attack_3():
   else:
     return "reselect move"
 
+def attack_4():
+  print("This is the 'weaken attack' move")
+  
 
 #move 4 will be making opponent shield weaker and move 5 will be making opponent attack weaker  
 #Robot 3 will be added if robot 1/2 actually works and battle works
