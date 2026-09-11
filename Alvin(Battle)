@@ -91,7 +91,14 @@ def attack_2():
 
 
 def attack_3():
+  print("This is the 'weaken shield' move")
+  print("This will make your opponent shield weaker")
+  yesorno = input("would u like to continue and use the move, y or n, if n then the other move on ur robot menu would be done automatically")
+  if yesorno == y:
+    return "Shield update'opp'"
+  else:
+    return "reselect move"
 
-  
+
 #move 4 will be making opponent shield weaker and move 5 will be making opponent attack weaker  
 #Robot 3 will be added if robot 1/2 actually works and battle works
