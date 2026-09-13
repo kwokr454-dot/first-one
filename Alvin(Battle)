@@ -39,6 +39,7 @@ def Tank_robot(opp_HP,opp_shield):
       print("because u gave up on move 1, you will now automatically do move 2")
       attack_2()
       Tank_robot_attack_multiplier = Tank_robot_attack_multiplier*2
+      battle_round+=1
       return "round done"
         
   else:
@@ -53,12 +54,15 @@ def Tank_robot(opp_HP,opp_shield):
       print("because u gave up on move 2, you will now automatically do move 1")
       attack_1()
       opp_HP-=50
+      battle_round+=1
       return "round done"
         
 
 
 
 def Damage_robot(hp):
+  global battle_round,victory
+  global Attack_robot_HP,Tank_robot_attack_multiplier,Attack_robot_shield
 
 ###def shield_robot(hp):
 ### skip for now after done
