@@ -27,9 +27,14 @@ def Tank_robot(opp_HP,opp_shield):
     if a == "damage":
       if Attack_robot_shield<=a and Attack_robot_shield>0:
         Attack_robot_shield = 0 
+        battle_round+=1
         return "Attack_robot_shield broke"
+
       elif (Attack_robot_shield+50) > a:
         Attack_robot_shield-=50
+        battle_round+=1
+        return "round done"
+
       else:
         Attack_robot_HP-=50
         battle_round+=1
@@ -63,8 +68,24 @@ def Tank_robot(opp_HP,opp_shield):
 def Attack_robot(hp):
   global battle_round,victory
   global Attack_robot_HP,Attack_robot_Attack_multiplier,Attack_robot_shield
+  attack=input("Which attack u want, 'attack_1' or 'attack_3'")
+  if attack == "attack_1":
+    a = attack_1()
+    print(a)
+    if a == "damage":
+      if Tank_robot_shield<=a and Tank_robot_shield>0:
+        Tank_robot_shield = 0 
+        battle_round+=1
+        return "Tank_robot_shield broke"
 
-
+      elif (Tank_robot_shield+50) > a:
+        Tank_robot_shield-=50\
+        battle_round+=1
+        return "round done"
+      else:
+        Tank_robot_HP-=50
+        battle_round+=1
+        return "round done"
 
 
 ###def shield_robot(hp):
