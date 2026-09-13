@@ -60,9 +60,12 @@ def Tank_robot(opp_HP,opp_shield):
 
 
 
-def Damage_robot(hp):
+def Attack_robot(hp):
   global battle_round,victory
-  global Attack_robot_HP,Tank_robot_attack_multiplier,Attack_robot_shield
+  global Attack_robot_HP,Attack_robot_Attack_multiplier,Attack_robot_shield
+
+
+
 
 ###def shield_robot(hp):
 ### skip for now after done
