@@ -63,10 +63,10 @@ def Tank_robot(opp_HP,opp_shield):
       return "round done"
         
 ### Attack robot now
+### 
 
 
-
-def Attack_robot(hp):
+def Attack_robot():
   global battle_round,victory
   global Attack_robot_HP,Attack_robot_Attack_multiplier,Attack_robot_shield
   attack=input("Which attack u want, 'attack_1' or 'attack_3'")
