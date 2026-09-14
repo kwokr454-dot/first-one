@@ -63,7 +63,8 @@ def Tank_robot(Attack_HP,Tank_attack,Tank_attack_multiplier,Attack_shield):
       return "round done"
         
 ### Attack robot now
-### 
+### add differnet parametre for attack robot when moves are picked
+
 
 
 def Attack_robot():
