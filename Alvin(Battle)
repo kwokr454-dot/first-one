@@ -101,7 +101,7 @@ def Attack_robot():
 def attack_1():
   print("This is the 'HIT' move")
   print("This will do 50 Base damage depending on the opponent's status on sheid...")
-  yesorno = input("would u like to continue and use the move, y or n, if n then the other move on ur robot menu would be done automatically")
+  yesorno = input("would you like to continue and use the move, y or n, if n then the other move on ur robot menu would be done automatically")
   if yesorno == y:
     return 50
   else:
