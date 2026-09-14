@@ -92,7 +92,7 @@ def Attack_robot():
 
 ###def shield_robot(hp):
 ### skip for now after done
-
+### this will not work, change the other 2 robot
 
 
 
