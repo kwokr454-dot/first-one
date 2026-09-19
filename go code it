@@ -16,5 +16,5 @@ def checkScore(a):
       d = 1
   return False
 
-
+##
 ####change as it doesnt work
