@@ -1,7 +1,9 @@
 ##Using W3School to learn it
 
 ##Q1:
-SELECT * FROM Customers
+SELECT * FROM Customers; 
+## the ; means its the end of the code
+
 
 ##Q2:
 
