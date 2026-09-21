@@ -6,4 +6,4 @@ SELECT * FROM Customers;
 
 
 ##Q2:
-
+SELECT
