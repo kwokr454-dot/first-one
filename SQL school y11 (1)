@@ -13,3 +13,5 @@ SELECT
 SELECT Products.ProductName
 FROM Orders, OrderDetail, Products, Customers
 
+WHERE
+### link the 4 together so it shows the right one
