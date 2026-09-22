@@ -10,3 +10,4 @@ SELECT
 
 ### do the code done today at school
 
+SELECT Products.ProductName
