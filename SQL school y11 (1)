@@ -13,10 +13,12 @@ SELECT
 SELECT Products.ProductName
 FROM Orders, OrderDetail, Products, Customers
 WHERE Customers.CustomersName = ""
-#forgot what the name was
+#forgot what the name was it was like alexandra ,,,
+
 And Customer.CustomerID = OrderDetails.CustomerID
 AND OrderDetails.OrderID = Orders.OrderID
 AND Orders.ProductID = Products.ProductID
+
 
 
 WHERE
