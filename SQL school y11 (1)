@@ -12,8 +12,10 @@ SELECT
 
 SELECT Products.ProductName
 FROM Orders, OrderDetail, Products, Customers
-WHERE Orders.OrderName = ""
+WHERE Customers.CustomersName = ""
 #forgot what the name was
+And Orders.OrderID = OrderDetails.OrderID
+AND OrderD
 
 WHERE
 ### link the 4 together so it shows the right one
