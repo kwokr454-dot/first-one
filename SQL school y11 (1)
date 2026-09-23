@@ -12,6 +12,8 @@ SELECT
 
 SELECT Products.ProductName
 FROM Orders, OrderDetail, Products, Customers
+WHERE Orders.OrderName = ""
+#forgot what the name was
 
 WHERE
 ### link the 4 together so it shows the right one
