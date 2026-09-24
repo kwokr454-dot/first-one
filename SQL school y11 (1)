@@ -23,7 +23,8 @@ AND Orders.ProductID = Products.ProductID
 
 WHERE
 ### link the 4 together so it shows the right one
-### idk what to write
+
+# for some reasnt eh first one disappeared
 
 
 ##idk what to write
