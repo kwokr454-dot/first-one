@@ -20,6 +20,13 @@ AND OrderDetails.OrderID = Orders.OrderID
 AND Orders.ProductID = Products.ProductID
 
 
+##Q3:
+
+## connect catogory to supplier.
+## catagory to products to shipper
+
+SELECT Shippers.Phone
+
 
 WHERE
 ### link the 4 together so it shows the right one
