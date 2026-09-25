@@ -18,6 +18,7 @@ WHERE Customers.CustomersName = ""
 And Customer.CustomerID = OrderDetails.CustomerID
 AND OrderDetails.OrderID = Orders.OrderID
 AND Orders.ProductID = Products.ProductID
+## im not gonna lie this doesnt even work
 
 
 ##Q3:
