@@ -32,9 +32,10 @@ AND Orders.ProductID = Products.ProductID
 ## catagory to products to shipper
 
 SELECT Shippers.Phone
-FROM Catogory, Products, Shippers
+FROM Catogory, Products, Shippers, Orders
 WHERE Catagory.CatagoryID = Products.CatagoryID
-AND Products.productID
+AND Products.ProductID = Orders.ProductID
+AND Orders.
 ##im not
 
 
