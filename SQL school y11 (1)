@@ -38,7 +38,9 @@ AND Products.ProductID = OrdersDetail.ProductID
 AND Orders.OrderID = Orders.OrderID
 AND Orders.ShipperID = Shipper.ShipperID
 AND Catogory.CatogoryName = 'Confections'
-##im not
+##done
+
+##q4
 
 
 WHERE
