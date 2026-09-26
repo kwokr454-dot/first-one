@@ -34,8 +34,10 @@ AND Orders.ProductID = Products.ProductID
 SELECT Shippers.Phone
 FROM Catogory, Products, Shippers, Orders
 WHERE Catagory.CatagoryID = Products.CatagoryID
-AND Products.ProductID = Orders.ProductID
-AND Orders.
+AND Products.ProductID = OrdersDetail.ProductID
+AND Orders.OrderID = Orders.OrderID
+AND Orders.ShipperID = Shipper.ShipperID
+AND Catogory.CatogoryName = 'Confections'
 ##im not
 
 
