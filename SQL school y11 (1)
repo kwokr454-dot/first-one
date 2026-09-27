@@ -42,7 +42,7 @@ AND Catogory.CatogoryName = 'Confections'
 
 ##q4
 
-
+SELECT 
 WHERE
 ### link the 4 together so it shows the right one
 ## add comments
