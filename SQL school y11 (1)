@@ -44,7 +44,8 @@ AND Catogory.CatogoryName = 'Confections'
 
 SELECT ShipperID
 FROM Customers, Catogories, Orders, Orderdetail, Shipper
-WHERE Customers.CustomerID
+WHERE Customers.CustomerID = Orders.CustomerID
+
 
 ### link the 5 together so it shows the right one
 ## add comments
