@@ -43,9 +43,9 @@ AND Catogory.CatogoryName = 'Confections'
 ##q4
 
 SELECT ShipperID
+FROM Customers, Catogories, Orders, Orderdetail, Shipper
 
-WHERE
-### link the 4 together so it shows the right one
+### link the 5 together so it shows the right one
 ## add comments
 ## question is connect 5 list
 
