@@ -15,7 +15,7 @@ FROM Orders, OrderDetail, Products, Customers
 WHERE Customers.CustomersName = ""
 
 #forgot what the name was it was like alexandra ,,,
-
+##icl do it tomo
 
 And Customer.CustomerID = OrderDetails.CustomerID
 AND OrderDetails.OrderID = Orders.OrderID
