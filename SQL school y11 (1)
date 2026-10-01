@@ -48,12 +48,7 @@ WHERE Customers.CustomerID = Orders.CustomerID
 
 
 ### link the 5 together so it shows the right one
-## add comments
-## question is connect 5 list
-# idk
-#idk again
-## idk
-## idk
+
 
 
 
