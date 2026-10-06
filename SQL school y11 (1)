@@ -54,6 +54,7 @@ WHERE Customers.CustomerID = Orders.CustomerID
 #q5
 SELECT schoolname
 from school
+where schoolcode = "10203"
 
 
 
