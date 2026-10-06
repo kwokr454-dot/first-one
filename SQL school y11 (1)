@@ -51,6 +51,9 @@ WHERE Customers.CustomerID = Orders.CustomerID
 ## do it tomo
 ## do it tomo
 
+#q5
+SELECT schoolname
+from school
 
 
 
