@@ -56,7 +56,7 @@ SELECT schoolname
 from school
 where schoolcode = "10203"
 ## try using the sql app
-
+## icl idek
 
 
 
